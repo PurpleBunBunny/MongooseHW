@@ -34,7 +34,7 @@ app.use(express.static("public"));
 
 // Connect to the Mongo DB
 var POOORT =
-  process.env.MONGOLAB_URI ||
+  process.env.MONGODB_URI ||
   process.env.MONGOHQ_URL ||
   'mongodb://localhost/mongooseHW';
 
